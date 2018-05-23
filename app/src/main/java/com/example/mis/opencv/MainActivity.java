@@ -2,6 +2,7 @@ package com.example.mis.opencv;
 
 import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewFrame;
+import org.opencv.android.JavaCamera2View;
 import org.opencv.android.LoaderCallbackInterface;
 import org.opencv.android.OpenCVLoader;
 import org.opencv.core.CvType;
@@ -71,6 +72,7 @@ public class MainActivity extends Activity implements CvCameraViewListener2 {
 
         mOpenCvCameraView.setCvCameraViewListener(this);
 
+        mOpenCvCameraView.setMaxFrameSize(1280,720);
     }
 
     @Override
